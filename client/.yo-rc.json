@@ -1,0 +1,25 @@
+{
+  "generator-m-ionic": {
+    "answers": {
+      "appName": "ZooApp",
+      "appId": "com.verch.zooapp",
+      "ionicCss": true,
+      "bowerPackages": [
+        "localforage#~1.4.0"
+      ],
+      "platforms": [
+        "android"
+      ],
+      "plugins": [
+        "cordova-plugin-device",
+        "cordova-plugin-inappbrowser",
+        "ionic-plugin-keyboard",
+        "cordova-plugin-splashscreen"
+      ],
+      "appModule": "ZooApp",
+      "ecosystems": [
+        "ionic-platform"
+      ]
+    }
+  }
+}

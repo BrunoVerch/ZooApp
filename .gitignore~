@@ -42,19 +42,19 @@ jspm_packages
 .sass-cache
 
 # npm & bower
-node_modules/
-bower_components/
+client/node_modules
+client/app/bower_components
 
 # custom gulp settings
-gulp/.gulp_settings.json
+client/gulp/.gulp_settings.json
 
 # ionic fonts
 client/app/main/assets/fonts/ionicons.*
 
 # cordova
-platforms/
-plugins/
-res/*/current
+client/platforms
+client/plugins
+client/res/*/current/
 
 # build folder
 client/www/**
