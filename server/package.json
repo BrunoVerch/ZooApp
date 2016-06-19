@@ -1,0 +1,19 @@
+{
+  "name": "zooapi",
+  "version": "1.0.0",
+  "description": "Api para aplicativo do zoológico",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "": ""
+  },
+  "author": "Bruno Verch",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.11.1",
+    "sequelize": "^3.23.3"
+  },
+  "devDependencies": {}
+}
