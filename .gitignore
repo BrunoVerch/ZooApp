@@ -57,7 +57,7 @@ plugins/
 res/*/current
 
 # build folder
-client/www/**
+www/
 
 # IDE
 *.sublime-project

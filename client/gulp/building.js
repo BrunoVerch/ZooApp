@@ -1,6 +1,7 @@
 'use strict';
 // gulp
 var gulp = require('gulp');
+var babel = require('gulp-babel');
 var options = gulp.options;
 var paths = gulp.paths;
 // plugins
@@ -42,6 +43,9 @@ gulp.task('build-app', ['clean', 'inject-all'], function () {
       .pipe($.ngAnnotate({
         add: true,
         sourcemap: true
+      }))
+      .pipe(babel({
+	presets: ['es2015']
       }))
       .pipe($.uglify())
       .pipe(jsFilter.restore)
