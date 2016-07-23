@@ -1,6 +1,7 @@
 (function() {
   'use strict';
   
+  runBlock.$inject = ['$ionicPlatform'];
   angular.module('zooapp')
     .run(runBlock);
 
