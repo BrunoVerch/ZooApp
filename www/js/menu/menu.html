@@ -1,31 +1,52 @@
 <ion-side-menus enable-menu-with-back-views="false" ng-controller="Menu as menu">
   <ion-side-menu-content>
-    <ion-nav-bar class="bar-stable">
-      <ion-nav-back-button>
-      </ion-nav-back-button>
-
+    <ion-nav-bar class="bar header">
       <ion-nav-buttons side="left">
-        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        <button class="button button-clear no-animation" menu-toggle="left">
+          <i class="icon ion-navicon"></i>
         </button>
       </ion-nav-buttons>
     </ion-nav-bar>
+
     <ion-nav-view name="menuContent"></ion-nav-view>
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
-    <ion-header-bar class="bar-stable">
-      <h1 class="title">Menu</h1>
-    </ion-header-bar>
     <ion-content>
+      <div class="header">
+      </div>
       <ion-list>
-        <ion-item menu-close ng-click="menu.openScan()">
-          QRCode
+        <ion-item menu-close class="item-icon-left" href="#/app/browse">
+          <i class="icon ion-map"></i>
+          Mapa
         </ion-item>
-        <ion-item menu-close href="#/app/browse">
-          Browse
+        <ion-item menu-close class="item-icon-left" href="#/app/browse">
+          <i class="icon ion-ios-game-controller-a-outline"></i>
+          Jogo
         </ion-item>
-        <ion-item menu-close href="#/app/playlists">
-          Playlists
+        <ion-item menu-close class="item-icon-left" ng-click="menu.openScan()">
+          <i class="icon ion-qr-scanner"></i>
+          Leitor QR Code
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" href="#/app/browse">
+          <i class="icon ion-document-text"></i>
+          Curiosidades
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" href="#/app/browse">
+          <i class="icon ion-ios-star-outline"></i>
+          Conquistas
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" href="#/app/browse">
+          <i class="icon ion-ios-information-outline"></i>
+          Orientações
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" href="#/app/browse">
+          <i class="icon ion-earth"></i>
+          Visitação
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" href="#/app/playlists">
+          <i class="icon ion-ios-telephone-outline"></i>
+          Contato
         </ion-item>
       </ion-list>
     </ion-content>

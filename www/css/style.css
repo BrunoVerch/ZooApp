@@ -1,1 +1,9 @@
 /* Empty. Add your own CSS if you like */
+.header{
+    height: 60px;
+    background-color: #009688;
+}
+
+.header .button.button-clear{
+    color: white;
+}
