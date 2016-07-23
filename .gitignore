@@ -4,3 +4,5 @@
 lib/
 plugins/
 platforms/
+.vscode/
+node_modules/
