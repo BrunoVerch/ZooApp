@@ -6,12 +6,22 @@ var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
+var ngAnnotate = require('gulp-ng-annotate');
 
 var paths = {
   sass: ['./scss/**/*.scss']
 };
 
-gulp.task('default', ['sass']);
+gulp.task('default', ['sass','annotate']);
+
+gulp.task('annotate', function () {
+    return gulp.src('www/js/**/*.js')
+        .pipe(ngAnnotate({
+          add: true,
+          single_quotes: true
+        }))
+        .pipe(gulp.dest('www/js'));
+});
 
 gulp.task('sass', function(done) {
   gulp.src('./scss/ionic.app.scss')
