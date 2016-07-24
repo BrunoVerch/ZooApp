@@ -33,6 +33,31 @@
                         controller: 'Specie'
                     }
                 }
+            })
+            .state('app.contacts', {
+                url: '/contacts',
+                abstract: true,
+                views: {
+                    'menuContent': {
+                        templateUrl: 'js/contact/index.html'
+                    }
+                }
+            })
+            .state('app.contacts.contact', {
+                url: '/contact',
+                views: {
+                    'tab-contact': {
+                        templateUrl: 'js/contact/contact.html'
+                    }
+                }
+            })
+            .state('app.contacts.visit', {
+                url: '/visit',
+                views: {
+                    'tab-visitation': {
+                        templateUrl: 'js/contact/visit.html'
+                    }
+                }
             });
     };
 

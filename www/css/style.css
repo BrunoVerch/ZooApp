@@ -1,9 +1,25 @@
 /* Empty. Add your own CSS if you like */
 .header{
     height: 60px;
+    position: relative;
     background-color: #009688;
+    border: none;
 }
 
 .header .button.button-clear{
     color: white;
+}
+
+.tabs-top > .tabs{
+    position: initial;
+    background-color: #009688;
+    color: white;
+}
+
+.tabs-striped .tab-item.tab-item-active{
+    border-color: white;
+}
+
+.no-side-margin{
+    margin: 20px 0px 20px 0px;
 }

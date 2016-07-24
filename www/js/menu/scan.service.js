@@ -8,8 +8,8 @@
         
         this.scan = function(sucess,error){
             cordova.plugins.barcodeScanner.scan(
-                sucess(result), 
-                error(err),
+                sucess, 
+                error,
                 {
                     "preferFrontCamera" : true,
                     "showFlipCameraButton" : true, 

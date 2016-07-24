@@ -4,7 +4,10 @@
     angular.module('zooapp')
         .config(configBlock);
 
-    function configBlock(){
+    /*ngInject*/
+    function configBlock($ionicConfigProvider){
+
+        $ionicConfigProvider.tabs.position('top');
 
     };
 
