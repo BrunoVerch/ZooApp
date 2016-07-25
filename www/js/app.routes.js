@@ -34,6 +34,15 @@
                     }
                 }
             })
+            .state('app.orientation', {
+                url: '/orientation',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'js/orientation/index.html',
+                        controller: 'Orientation'
+                    }
+                }
+            })
             .state('app.contacts', {
                 url: '/contacts',
                 abstract: true,

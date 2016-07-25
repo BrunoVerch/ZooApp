@@ -1,0 +1,11 @@
+<ion-view>
+    <ion-content>
+        <ion-list ng-controller="Orientation as vm">
+            <ion-item class="item item-thumbnail-left" collection-repeat="orientation in vm.orientations">
+                <img src="{{orientation.image}}">
+                <h2>{{orientation.title}}</h2>
+                <p>{{orientation.description}}</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
