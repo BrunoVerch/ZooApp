@@ -20,6 +20,10 @@
     border-color: white;
 }
 
+.has-tabs-top, .has-header{
+    top: 0;
+}
+
 .no-side-margin{
     margin: 20px 0px 20px 0px;
 }
